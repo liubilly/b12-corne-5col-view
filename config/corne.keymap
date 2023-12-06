@@ -23,6 +23,11 @@
     flavor = "hold-preferred";
 };
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+};
+
 / {
     //combos {
     //  compatible = "zmk,combos";
@@ -70,6 +75,7 @@
                 <&macro_release>,
                 <&kp LGUI>;
         };
+
         win_emoji: win_emoji {
             label = "win_emoji";
             compatible = "zmk,behavior-macro";
@@ -82,6 +88,7 @@
                 <&macro_release>,
                 <&kp LGUI>;
         };
+
         select_row: select_row {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -96,6 +103,7 @@
 
             label = "SELECT_ROW";
         };
+
         common_p: common_p {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -112,6 +120,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&spotlight>, <&mac_emoji>;
         };
+
         td_multi_windows: tap_dance_multi_windows {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_WINDOWS";
@@ -119,6 +128,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&kp LGUI>, <&win_emoji>;
         };
+
         bm: bottom_row_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "BOTTOM_ROW_MODS";
@@ -128,6 +138,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         cm: code_row_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "CODE_ROW_MODS";
@@ -139,6 +150,7 @@
 
             retro-tap;
         };
+
         sm: space_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACE_MOD";
@@ -148,6 +160,7 @@
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
         td_space_to_1: td_space_to_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SPACE_TO_1";
@@ -156,6 +169,7 @@
 
             tapping-term-ms = <200>;
         };
+
         td_esc_select_row: td_esc_select_row {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ESC_SELECT_ROW";
@@ -177,7 +191,7 @@
             key-positions = <27 28>;
         };
 
-        combo_backspace {
+        combo_backspace_right {
             bindings = <&kp BSPC>;
             key-positions = <7 8>;
         };
@@ -185,6 +199,11 @@
         combo_to_bt_layer {
             bindings = <&to 4>;
             key-positions = <1 10>;
+        };
+
+        combo_backspace_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <3 4>;
         };
     };
 
@@ -242,4 +261,3 @@
         };
     };
 };
-
