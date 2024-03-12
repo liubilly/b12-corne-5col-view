@@ -163,6 +163,13 @@
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&select_row>;
         };
+
+        td_shift_select_line: td_shift_select_line {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFT_SELECT_LINE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&select_row>;
+        };
     };
 
     combos {
@@ -207,21 +214,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        win {
             bindings = <
-&none  &kp W  &kp L        &kp R               &kp B        &kp DOT      &kp FSLH     &kp Q        &kp U       &kp D        &kp J  &none
-&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N      &mt LGUI T   &kp COMMA    &kp SEMI     &mt RGUI A   &mt RALT E  &mt RCTRL O  &kp I  &none
-&none  &kp F  &kp M        &kp V               &kp C        &kp Z        &kp G        &kp P        &kp X       &kp K        &kp Y  &none
-                           &td_esc_select_row  &key_repeat  &kp LSHFT    &lt 1 SPACE  &lt 2 ENTER  &lt 3 TAB
+&none  &kp W  &kp L        &kp R               &kp B        &kp DOT                  &kp FSLH     &kp Q        &kp U       &kp D        &kp J  &none
+&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N      &mt LGUI T   &kp COMMA                &kp SEMI     &mt RGUI A   &mt RALT E  &mt RCTRL O  &kp I  &none
+&none  &kp F  &kp M        &kp V               &kp C        &kp Z                    &kp G        &kp P        &kp X       &kp K        &kp Y  &none
+                           &td_esc_select_row  &key_repeat  &td_shift_select_line    &lt 1 SPACE  &lt 2 ENTER  &lt 3 TAB
             >;
         };
 
-        code_layer {
+        nav {
             bindings = <
-&none  &kp TILDE  &kp ASTRK         &kp MINUS      &kp PLUS       &kp LPAR          &kp RPAR  &kp H             &kp J     &kp K     &kp L      &none
-&none  &kp GRAVE  &kp LEFT_CONTROL  &kp BACKSLASH  &kp PIPE       &kp LBRC          &kp RBRC  &kp LEFT          &kp UP    &kp DOWN  &kp RIGHT  &none
-&none  &none      &kp APOS          &kp DQT        &kp LESS_THAN  &kp LBKT          &kp RBKT  &kp GREATER_THAN  &kp HOME  &kp END   &tog 1     &none
-                                    &kp EQUAL      &key_repeat    &kp UNDERSCORE    &to 0     &none             &none
+&none  &kp GRAVE   &kp K_REDO  &kp K_CUT   &kp K_UNDO   &kp DELETE        &kp HOME  &kp PAGE_UP      &kp PAGE_DOWN  &kp END    &kp BACKSPACE    &none
+&none  &kp ESCAPE  &kp LCTRL   &kp K_COPY  &kp K_PASTE  &kp TAB           &kp LEFT  &kp UP           &kp DOWN       &kp RIGHT  &kp ENTER        &none
+&none  &none       &none       &none       &none        &none             &kp RBKT  &kp PRINTSCREEN  &key_repeat    &kp END    &kp PRINTSCREEN  &none
+                               &none       &key_repeat  &kp LEFT_SHIFT    &none     &none            &none
             >;
         };
 
