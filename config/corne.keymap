@@ -216,37 +216,37 @@
 
         win {
             bindings = <
-&none  &kp W  &kp L        &kp R               &kp B        &kp DOT                  &kp FSLH     &kp Q        &kp U       &kp D        &kp J  &none
-&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N      &mt LGUI T   &kp COMMA                &kp SEMI     &mt RGUI A   &mt RALT E  &mt RCTRL O  &kp I  &none
-&none  &kp F  &kp M        &kp V               &kp C        &kp Z                    &kp G        &kp P        &kp X       &kp K        &kp Y  &none
-                           &td_esc_select_row  &key_repeat  &td_shift_select_line    &lt 1 SPACE  &lt 2 ENTER  &lt 3 TAB
+&none  &kp W  &kp L        &kp R               &kp B        &kp DOT                  &kp FSLH     &kp Q       &kp U       &kp D        &kp J  &none
+&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N      &mt LGUI T   &kp COMMA                &kp SEMI     &mt RGUI A  &mt RALT E  &mt RCTRL O  &kp I  &none
+&none  &kp F  &kp M        &kp V               &kp C        &kp Z                    &kp G        &kp P       &kp X       &kp K        &kp Y  &none
+                           &td_esc_select_row  &key_repeat  &td_shift_select_line    &lt 1 SPACE  &to 2       &lt 3 TAB
             >;
         };
 
-        nav {
+        nav_win {
             bindings = <
-&none  &kp GRAVE   &kp K_REDO  &kp K_CUT   &kp K_UNDO   &kp DELETE        &kp HOME  &kp PAGE_UP      &kp PAGE_DOWN  &kp END    &kp BACKSPACE    &none
-&none  &kp ESCAPE  &kp LCTRL   &kp K_COPY  &kp K_PASTE  &kp TAB           &kp LEFT  &kp UP           &kp DOWN       &kp RIGHT  &kp ENTER        &none
-&none  &none       &none       &none       &none        &none             &kp RBKT  &kp PRINTSCREEN  &key_repeat    &kp END    &kp PRINTSCREEN  &none
-                               &none       &key_repeat  &kp LEFT_SHIFT    &none     &none            &none
+&none  &kp GRAVE   &kp K_REDO  &kp K_CUT   &kp K_UNDO   &kp DELETE        &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN    &kp END    &kp BACKSPACE  &none
+&none  &kp ESCAPE  &kp LCTRL   &kp K_COPY  &kp K_PASTE  &kp TAB           &kp LEFT  &kp UP       &kp DOWN         &kp RIGHT  &kp ENTER      &none
+&none  &none       &none       &none       &none        &none             &none     &key_repeat  &kp PRINTSCREEN  &none      &none          &none
+                               &none       &key_repeat  &kp LEFT_SHIFT    &none     &none        &none
             >;
         };
 
-        number_layer {
+        code_win {
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR     &kp PRCNT         &kp CARET  &kp AMPS      &kp ASTERISK   &kp LPAR       &kp RIGHT_PARENTHESIS  &none
-&none  &kp N1    &kp N2  &kp N3    &kp N4       &kp N5            &kp N6     &kp N7        &kp N8         &kp N9         &kp N0                 &none
-&none  &none     &none   &none     &none        &none             &kp DOT    &kp QUESTION  &kp COMMA      &kp SEMICOLON  &tog 2                 &none
-                         &none     &key_repeat  &sm LGUI SPACE    &to 0      &none         &td_multi_mac
+&none  &none  &kp AT     &kp HASH          &none            &kp DELETE        &kp CARET  &kp AMPS   &kp ASTERISK       &kp DOLLAR  &none  &none
+&none  &none  &kp EQUAL  &kp LPAR          &kp SQT          &none             &none      &kp SQT    &kp RPAR           &none       &none  &none
+&none  &none  &kp MINUS  &kp LEFT_BRACKET  &kp EXCLAMATION  &none             &none      &kp SLASH  &kp RIGHT_BRACKET  &none       &to 3  &none
+                         &none             &key_repeat      &kp LEFT_SHIFT    &to 0      &to 4      &td_multi_mac
             >;
         };
 
-        nav_layer {
+        num {
             bindings = <
-&none  &none            &none  &kp F3  &kp F5       &none    &none  &none         &none  &none  &none          &none
-&none  &kp LC(LS(TAB))  &none  &kp F6  &kp LC(TAB)  &none    &none  &kp LC(LEFT)  &none  &none  &kp LC(RIGHT)  &none
-&none  &none            &none  &none   &none        &none    &none  &none         &none  &none  &tog 3         &none
-                               &none   &key_repeat  &none    &to 0  &none         &none
+&none  &kp F6  &kp F7        &kp F8       &kp F9       &kp F10           &none  &none         &none         &none         &none          &none
+&none  &kp F1  &mt LCTRL F2  &mt LALT F3  &mt LGUI F4  &kp F5            &none  &kp NUMBER_4  &none         &none         &kp LC(RIGHT)  &none
+&none  &none   &none         &none        &kp F11      &kp F12           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &tog 3         &none
+                             &none        &key_repeat  &kp LEFT_SHIFT    &to 0  &none         &none
             >;
         };
 
