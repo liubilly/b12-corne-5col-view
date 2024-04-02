@@ -216,10 +216,10 @@
 
         win {
             bindings = <
-&none  &kp W  &kp L        &kp R               &kp B        &kp DOT                  &kp FSLH     &kp Q       &kp U       &kp D        &kp J  &none
-&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N      &mt LGUI T   &kp COMMA                &kp SEMI     &mt RGUI A  &mt RALT E  &mt RCTRL O  &kp I  &none
-&none  &kp F  &kp M        &kp V               &kp C        &kp Z                    &kp G        &kp P       &kp X       &kp K        &kp Y  &none
-                           &td_esc_select_row  &key_repeat  &td_shift_select_line    &lt 1 SPACE  &to 2       &lt 3 TAB
+&none  &kp W  &kp L        &kp R           &kp B       &kp DOT                  &kp FSLH     &kp Q       &kp U        &kp D        &kp J  &none
+&none  &kp S  &mt LCTRL H  &mt LEFT_ALT N  &mt LGUI T  &kp COMMA                &kp SEMI     &mt RGUI A  &mt RALT E   &mt RCTRL O  &kp I  &none
+&none  &kp F  &kp M        &kp V           &kp C       &kp Z                    &kp G        &kp P       &kp X        &kp K        &kp Y  &none
+                           &key_repeat     &to 2       &td_shift_select_line    &lt 1 SPACE  &to 2       &key_repeat
             >;
         };
 
@@ -228,25 +228,25 @@
 &none  &kp GRAVE   &kp K_REDO  &kp K_CUT   &kp K_UNDO   &kp DELETE        &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN    &kp END    &kp BACKSPACE  &none
 &none  &kp ESCAPE  &kp LCTRL   &kp K_COPY  &kp K_PASTE  &kp TAB           &kp LEFT  &kp UP       &kp DOWN         &kp RIGHT  &kp ENTER      &none
 &none  &none       &none       &none       &none        &none             &none     &key_repeat  &kp PRINTSCREEN  &none      &none          &none
-                               &none       &key_repeat  &kp LEFT_SHIFT    &none     &none        &none
+                               &trans      &none        &kp LEFT_SHIFT    &none     &none        &trans
             >;
         };
 
         code_win {
             bindings = <
-&none  &none  &kp AT     &kp HASH          &none            &kp DELETE        &kp CARET  &kp AMPS   &kp ASTERISK       &kp DOLLAR  &none  &none
-&none  &none  &kp EQUAL  &kp LPAR          &kp SQT          &none             &none      &kp SQT    &kp RPAR           &none       &none  &none
-&none  &none  &kp MINUS  &kp LEFT_BRACKET  &kp EXCLAMATION  &none             &none      &kp SLASH  &kp RIGHT_BRACKET  &none       &to 3  &none
-                         &none             &key_repeat      &kp LEFT_SHIFT    &to 0      &to 4      &td_multi_mac
+&none  &kp EXCLAMATION  &kp AT     &kp HASH          &kp PERCENT      &kp DELETE        &kp CARET     &kp AMPS   &kp PIPE           &kp DOLLAR     &kp BACKSPACE  &none
+&none  &kp ESCAPE       &kp EQUAL  &kp LPAR          &kp SQT          &kp TAB           &kp PLUS      &kp SQT    &kp RPAR           &kp SEMICOLON  &kp ENTER      &none
+&none  &to 3            &kp MINUS  &kp LEFT_BRACKET  &kp EXCLAMATION  &kp UNDERSCORE    &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &none          &to 3          &none
+                                   &trans            &to 4            &kp LEFT_SHIFT    &to 0         &to 4      &trans
             >;
         };
 
-        num {
+        num_win {
             bindings = <
-&none  &kp F6  &kp F7        &kp F8       &kp F9       &kp F10           &none  &none         &none         &none         &none          &none
-&none  &kp F1  &mt LCTRL F2  &mt LALT F3  &mt LGUI F4  &kp F5            &none  &kp NUMBER_4  &none         &none         &kp LC(RIGHT)  &none
-&none  &none   &none         &none        &kp F11      &kp F12           &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &tog 3         &none
-                             &none        &key_repeat  &kp LEFT_SHIFT    &to 0  &none         &none
+&none  &kp F6  &kp F7        &kp F8       &kp F9       &kp F10           &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE  &none
+&none  &kp F1  &mt LCTRL F2  &mt LALT F3  &mt LGUI F4  &kp F5            &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER      &none
+&none  &none   &none         &none        &kp F11      &kp F12           &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH      &none
+                             &none        &to 4        &kp LEFT_SHIFT    &to 0         &kp NUMBER_0  &none
             >;
         };
 
@@ -255,7 +255,7 @@
 &none  &bt BT_CLR    &none         &none         &none         &none           &none  &none         &none       &none         &none  &none
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none  &none
 &none  &none         &none         &none         &bootloader   &none           &none  &none         &none       &none         &none  &none
-                                   &none         &none         &to 0           &to 0  &none         &none
+                                   &none         &none         &none           &to 0  &none         &none
             >;
         };
     };
