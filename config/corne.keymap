@@ -225,10 +225,10 @@
 
         nav_win {
             bindings = <
-&none  &kp GRAVE   &kp LC(RS(Y))  &kp LC(X)  &kp LC(Y)  &kp DELETE        &kp HOME         &kp PAGE_DOWN  &kp PAGE_UP      &kp END      &kp BACKSPACE  &none
-&none  &kp ESCAPE  &kp LCTRL      &kp LC(C)  &kp LC(V)  &kp TAB           &kp LEFT         &kp DOWN       &kp UP_ARROW     &kp RIGHT    &kp ENTER      &none
-&none  &none       &kp LC(W)      &none      &none      &kp LC(T)         &kp LS(LC(TAB))  &none          &kp PRINTSCREEN  &kp LC(TAB)  &none          &none
-                                  &trans     &none      &kp LEFT_SHIFT    &none            &none          &trans
+&none  &kp GRAVE   &kp LC(Z)  &kp LC(X)           &kp LC(Y)  &kp DELETE        &kp HOME         &kp PAGE_DOWN       &kp PAGE_UP      &kp END      &kp BACKSPACE  &none
+&none  &kp ESCAPE  &kp LCTRL  &mt LEFT_ALT LC(C)  &kp LC(V)  &kp TAB           &kp LEFT         &kp DOWN            &kp UP_ARROW     &kp RIGHT    &kp ENTER      &none
+&none  &none       &kp LC(W)  &none               &none      &kp LC(T)         &kp LS(LC(TAB))  &kp K_CONTEXT_MENU  &kp PRINTSCREEN  &kp LC(TAB)  &none          &none
+                              &trans              &none      &kp LEFT_SHIFT    &none            &none               &trans
             >;
         };
 
@@ -252,10 +252,10 @@
 
         bt_layer {
             bindings = <
-&none  &bt BT_CLR    &none         &none         &none         &none           &none  &none         &none       &none         &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none  &none
-&none  &none         &none         &none         &bootloader   &none           &none  &none         &none       &none         &none  &none
-                                   &none         &none         &none           &to 0  &none         &none
+&none  &bt BT_CLR    &none         &none         &none         &none           &none  &kp C_BRIGHTNESS_DEC  &none       &kp C_BRIGHTNESS_INC  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN          &kp C_MUTE  &kp C_VOL_UP          &none  &none
+&none  &none         &none         &none         &bootloader   &none           &none  &none                 &none       &none                 &none  &none
+                                   &none         &none         &none           &to 0  &none                 &none
             >;
         };
     };
