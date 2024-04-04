@@ -227,7 +227,7 @@
             bindings = <
 &none  &kp GRAVE   &kp LC(Z)  &kp LC(X)           &kp LC(Y)  &kp DELETE        &kp HOME         &kp PAGE_DOWN       &kp PAGE_UP      &kp END      &kp BACKSPACE  &none
 &none  &kp ESCAPE  &kp LCTRL  &mt LEFT_ALT LC(C)  &kp LC(V)  &kp TAB           &kp LEFT         &kp DOWN            &kp UP_ARROW     &kp RIGHT    &kp ENTER      &none
-&none  &none       &kp LC(W)  &none               &none      &kp LC(T)         &kp LS(LC(TAB))  &kp K_CONTEXT_MENU  &kp PRINTSCREEN  &kp LC(TAB)  &none          &none
+&none  &none       &kp LC(W)  &kp LC(LS(T))       &kp LA(D)  &kp LC(T)         &kp LS(LC(TAB))  &kp K_CONTEXT_MENU  &kp PRINTSCREEN  &kp LC(TAB)  &none          &none
                               &trans              &none      &kp LEFT_SHIFT    &none            &none               &trans
             >;
         };
