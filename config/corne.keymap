@@ -234,10 +234,10 @@
 
         code_win {
             bindings = <
-&none  &kp EXCLAMATION  &kp AT     &kp HASH          &kp PERCENT      &kp DELETE        &kp CARET     &kp AMPS    &kp PIPE           &kp DOLLAR     &kp BACKSPACE  &none
-&none  &kp ESCAPE       &kp EQUAL  &kp LPAR          &kp SQT          &kp TAB           &kp PLUS      &kp SQT     &kp RPAR           &kp SEMICOLON  &kp ENTER      &none
-&none  &none            &kp MINUS  &kp LEFT_BRACKET  &kp EXCLAMATION  &kp UNDERSCORE    &kp ASTERISK  &kp SLASH   &kp RIGHT_BRACKET  &none          &to 3          &none
-                                   &trans            &to 4            &kp LEFT_SHIFT    &to 0         &kp PERIOD  &trans
+&none  &kp EXCLAMATION  &kp AT     &kp HASH          &kp PERCENT        &kp DELETE        &kp CARET     &kp AMPS         &kp ASTERISK       &kp DOLLAR     &kp BACKSPACE  &none
+&none  &kp ESCAPE       &kp EQUAL  &kp LPAR          &kp DOUBLE_QUOTES  &kp TAB           &kp PLUS      &kp SQT          &kp RPAR           &kp SEMICOLON  &kp ENTER      &none
+&none  &kp LEFT_SHIFT   &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE     &kp UNDERSCORE    &kp ASTERISK  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &none          &to 3          &none
+                                   &trans            &to 4              &kp LEFT_SHIFT    &to 0         &kp PERIOD       &trans
             >;
         };
 
