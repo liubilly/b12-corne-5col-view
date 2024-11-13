@@ -225,10 +225,10 @@
 
         nav_win {
             bindings = <
-&none  &kp GRAVE   &kp LC(Z)  &kp LC(X)           &kp LC(Y)  &kp DELETE        &kp HOME         &kp PAGE_DOWN       &kp PAGE_UP      &kp END      &kp BACKSPACE  &none
-&none  &kp ESCAPE  &kp LCTRL  &mt LEFT_ALT LC(C)  &kp LC(V)  &kp TAB           &kp LEFT         &kp DOWN            &kp UP_ARROW     &kp RIGHT    &kp ENTER      &none
-&none  &none       &kp LC(W)  &kp LC(LS(T))       &kp LA(D)  &kp LC(T)         &kp LS(LC(TAB))  &kp K_CONTEXT_MENU  &kp PRINTSCREEN  &kp LC(TAB)  &none          &none
-                              &trans              &none      &kp LEFT_SHIFT    &none            &none               &trans
+&none  &kp GRAVE     &kp LC(Z)     &kp LC(X)           &kp LC(Y)     &kp DELETE        &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP   &kp END       &kp BACKSPACE  &none
+&none  &kp ESCAPE    &kp LCTRL     &mt LEFT_ALT LC(C)  &kp LC(V)     &kp TAB           &kp LEFT      &kp DOWN       &kp UP_ARROW  &kp RIGHT     &kp ENTER      &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &none
+                                   &trans              &none         &kp LEFT_SHIFT    &none         &none          &trans
             >;
         };
 
